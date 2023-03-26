@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8dPiCCsYHRk4TEqB3GeN2nHcdLANgXOQU8cKgzo6qJcLrWkjBgMaNdezxgt6GoU+IVNWHaXFzA+JdO/9Le4wMg==",
+  "dgSpecHash": "SGxTlSytbRRe9/BlMbVILFUTgptW7yw7zRMewI5FVXQONbPlXgTak8ICAxUJSuS25VEkwPPc3S+YK8BbDEwOrA==",
   "success": true,
-  "projectFilePath": "C:\\repo\\stock-product-hub\\src\\StockProduct.Infrastructure\\StockProduct.Infrastructure.csproj",
+  "projectFilePath": "c:\\repo\\stock-product-hub\\src\\StockProduct.Infrastructure\\StockProduct.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Thiago Santos\\.nuget\\packages\\confluent.kafka\\2.0.2\\confluent.kafka.2.0.2.nupkg.sha512",
     "C:\\Users\\Thiago Santos\\.nuget\\packages\\librdkafka.redist\\2.0.2\\librdkafka.redist.2.0.2.nupkg.sha512",

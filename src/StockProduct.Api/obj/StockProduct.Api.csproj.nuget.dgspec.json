@@ -32,8 +32,8 @@
               "c:\\repo\\stock-product-hub\\src\\StockProduct.Application\\StockProduct.Application.csproj": {
                 "projectPath": "c:\\repo\\stock-product-hub\\src\\StockProduct.Application\\StockProduct.Application.csproj"
               },
-              "C:\\repo\\stock-product-hub\\src\\StockProduct.Infrastructure\\StockProduct.Infrastructure.csproj": {
-                "projectPath": "C:\\repo\\stock-product-hub\\src\\StockProduct.Infrastructure\\StockProduct.Infrastructure.csproj"
+              "c:\\repo\\stock-product-hub\\src\\StockProduct.Infrastructure\\StockProduct.Infrastructure.csproj": {
+                "projectPath": "c:\\repo\\stock-product-hub\\src\\StockProduct.Infrastructure\\StockProduct.Infrastructure.csproj"
               }
             }
           }
@@ -162,14 +162,14 @@
         }
       }
     },
-    "C:\\repo\\stock-product-hub\\src\\StockProduct.Infrastructure\\StockProduct.Infrastructure.csproj": {
+    "c:\\repo\\stock-product-hub\\src\\StockProduct.Infrastructure\\StockProduct.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\repo\\stock-product-hub\\src\\StockProduct.Infrastructure\\StockProduct.Infrastructure.csproj",
+        "projectUniqueName": "c:\\repo\\stock-product-hub\\src\\StockProduct.Infrastructure\\StockProduct.Infrastructure.csproj",
         "projectName": "StockProduct.Infrastructure",
-        "projectPath": "C:\\repo\\stock-product-hub\\src\\StockProduct.Infrastructure\\StockProduct.Infrastructure.csproj",
+        "projectPath": "c:\\repo\\stock-product-hub\\src\\StockProduct.Infrastructure\\StockProduct.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Thiago Santos\\.nuget\\packages\\",
-        "outputPath": "C:\\repo\\stock-product-hub\\src\\StockProduct.Infrastructure\\obj\\",
+        "outputPath": "c:\\repo\\stock-product-hub\\src\\StockProduct.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Thiago Santos\\AppData\\Roaming\\NuGet\\NuGet.Config",

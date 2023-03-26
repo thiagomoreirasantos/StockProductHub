@@ -1,0 +1,9 @@
+src/.gitignore
+src/StockProduct.Api/obj/project.assets.json
+src/StockProduct.Api/obj/project.nuget.cache
+src/StockProduct.Api/obj/StockProduct.Api.csproj.nuget.dgspec.json
+src/StockProduct.Api/obj/Debug/net7.0/project.razor.json
+src/StockProduct.Api/obj/Debug/net7.0/StockProduct.Api.assets.cache
+src/StockProduct.Api/obj/Debug/net7.0/StockProduct.Api.GeneratedMSBuildEditorConfig.editorconfig
+src/StockProduct.Infrastructure/obj/project.nuget.cache
+src/StockProduct.Infrastructure/obj/StockProduct.Infrastructure.csproj.nuget.dgspec.json
