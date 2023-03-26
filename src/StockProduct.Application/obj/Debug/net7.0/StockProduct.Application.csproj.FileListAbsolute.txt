@@ -1,0 +1,12 @@
+c:\repo\stock-product-hub\src\StockProduct.Application\bin\Debug\net7.0\StockProduct.Application.deps.json
+c:\repo\stock-product-hub\src\StockProduct.Application\bin\Debug\net7.0\StockProduct.Application.dll
+c:\repo\stock-product-hub\src\StockProduct.Application\bin\Debug\net7.0\StockProduct.Application.pdb
+c:\repo\stock-product-hub\src\StockProduct.Application\obj\Debug\net7.0\StockProduct.Application.csproj.AssemblyReference.cache
+c:\repo\stock-product-hub\src\StockProduct.Application\obj\Debug\net7.0\StockProduct.Application.GeneratedMSBuildEditorConfig.editorconfig
+c:\repo\stock-product-hub\src\StockProduct.Application\obj\Debug\net7.0\StockProduct.Application.AssemblyInfoInputs.cache
+c:\repo\stock-product-hub\src\StockProduct.Application\obj\Debug\net7.0\StockProduct.Application.AssemblyInfo.cs
+c:\repo\stock-product-hub\src\StockProduct.Application\obj\Debug\net7.0\StockProduct.Application.csproj.CoreCompileInputs.cache
+c:\repo\stock-product-hub\src\StockProduct.Application\obj\Debug\net7.0\StockProduct.Application.dll
+c:\repo\stock-product-hub\src\StockProduct.Application\obj\Debug\net7.0\refint\StockProduct.Application.dll
+c:\repo\stock-product-hub\src\StockProduct.Application\obj\Debug\net7.0\StockProduct.Application.pdb
+c:\repo\stock-product-hub\src\StockProduct.Application\obj\Debug\net7.0\ref\StockProduct.Application.dll
