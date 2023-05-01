@@ -4,8 +4,6 @@ using StockProduct.Api.Mapper;
 using StockProduct.Application.Configuration;
 using StockProduct.Application.Dtos;
 using StockProduct.Application.Interfaces;
-using StockProduct.Application.Policies;
-using StockProduct.Application.Services;
 using StockProduct.Application.Validator;
 using StockProduct.Infrastructure.Message.Broker;
 using StockProduct.Infrastructure.Message.Broker.Consumer;
@@ -30,10 +28,6 @@ builder.Services.AddScoped<IProducerService, ProducerService>();
 builder.Services.AddScoped<IConsumerService, ConsumerService>();
 
 builder.Services.AddScoped<IKafkaBroker, KafkaBroker>();
-
-builder.Services.AddScoped<IPolicyFactory, PolicyFactory>();
-
-builder.Services.AddScoped<IDeliveryService, DeliveryService>();
 
 builder.Services.AddHttpClient("", config =>
 {
