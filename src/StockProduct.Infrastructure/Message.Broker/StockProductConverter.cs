@@ -4,16 +4,16 @@ using StockProduct.Application.Dtos;
 
 namespace StockProduct.Infrastructure.Message.Broker
 {
-    public class StockProductConverter : JsonCreationConverter<StockProductData>
+    public class StockProductConverter : JsonCreationConverter<StockProductInput>
     {
         public override void WriteJson(JsonWriter writer, object? value, JsonSerializer serializer)
         {
             throw new NotImplementedException();
         }
 
-        protected override StockProductData Create(Type objectType, JObject jObject)
+        protected override StockProductInput Create(Type objectType, JObject jObject)
         {
-            return new StockProductData();
+            return new StockProductInput();
         }
     }
 }

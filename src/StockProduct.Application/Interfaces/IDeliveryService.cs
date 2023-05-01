@@ -4,6 +4,6 @@ namespace StockProduct.Application.Interfaces
 {
     public interface IDeliveryService
     {
-        Task DispatchAsync(StockProductData stockProductData);
+        Task DispatchAsync(StockProductInput stockProductData);
     }
 }

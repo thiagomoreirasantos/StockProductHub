@@ -23,14 +23,14 @@ namespace StockProduct.Infrastructure.Message.Broker.Producer
             };
         }
 
-        public async Task ProduceMessageAsync(StockProductData entity, string? key = null)
+        public async Task ProduceMessageAsync(StockProductOutput entity, string? key = null)
         {
-            using var p = new ProducerBuilder<string, StockProductData>(_producerConfig)
+            using var p = new ProducerBuilder<string, StockProductOutput>(_producerConfig)
                 .SetKeySerializer(new JsonSerializerUTF8<string>())
-                .SetValueSerializer(new JsonSerializerUTF8<StockProductData>())
+                .SetValueSerializer(new JsonSerializerUTF8<StockProductOutput>())
                 .Build();
 
-            var message = new Message<string, StockProductData> { Key = key ??= string.Empty, Value = entity };
+            var message = new Message<string, StockProductOutput> { Key = key ??= string.Empty, Value = entity };
 
             await p.ProduceAsync(_topicName, message);
         }

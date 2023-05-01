@@ -27,12 +27,11 @@ namespace StockProduct.Application.Services
             _kafkaBroker = kafkaBroker;
         }
 
-        public async Task DispatchAsync(StockProductData stockProductData)
+        public async Task DispatchAsync(StockProductInput stockProductData)
         {
             try
             {
-                if (stockProductData is null)
-                    throw new ArgumentNullException(nameof(stockProductData));
+                _ = stockProductData ?? throw new ArgumentException(nameof(stockProductData));
 
                 var client = _httpClientFactory.CreateClient(_applicationSettings.Kafka.Destination.Host);
 

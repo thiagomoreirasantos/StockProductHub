@@ -1,6 +1,9 @@
+using FluentValidation.Results;
+using StockProduct.Application.Validator;
+
 namespace StockProduct.Application.Dtos
 {
-    public class StockProductData
+    public class StockProductInput
     {
         public string Name { get; set; } = string.Empty;
         public string Brand { get; set; } = string.Empty;

@@ -11,7 +11,7 @@ namespace StockProduct.Infrastructure.Message.Broker
         private readonly string _server;
         private readonly string _groupId;
         private readonly ConsumerConfig _consumerConfig;
-        private readonly JsonCreationConverter<StockProductData> JsonCreationConverter;
+        private readonly JsonCreationConverter<StockProductInput> JsonCreationConverter;
         private readonly IApplicationSettings _applicationSettings;
 
         public ConsumerService(
@@ -37,9 +37,9 @@ namespace StockProduct.Infrastructure.Message.Broker
 
         public void Consumer(CancellationTokenSource cancellationToken)
         {
-            using var consumer = new ConsumerBuilder<string, StockProductData>(_consumerConfig)
+            using var consumer = new ConsumerBuilder<string, StockProductInput>(_consumerConfig)
                 .SetKeyDeserializer(new JsonDeserializerKeyUTF8<string>())
-                .SetValueDeserializer(new JsonDeserializerValueUTF8<StockProductData>(JsonCreationConverter))
+                .SetValueDeserializer(new JsonDeserializerValueUTF8<StockProductInput>(JsonCreationConverter))
                 .Build();
 
             consumer.Subscribe(new[] { _topicName });
@@ -77,9 +77,9 @@ namespace StockProduct.Infrastructure.Message.Broker
 
         public void Pause()
         {
-            using var consumer = new ConsumerBuilder<string, StockProductData>(_consumerConfig)
+            using var consumer = new ConsumerBuilder<string, StockProductInput>(_consumerConfig)
                 .SetKeyDeserializer(new JsonDeserializerKeyUTF8<string>())
-                .SetValueDeserializer(new JsonDeserializerValueUTF8<StockProductData>(JsonCreationConverter))
+                .SetValueDeserializer(new JsonDeserializerValueUTF8<StockProductInput>(JsonCreationConverter))
                 .Build();
 
             consumer.Pause(consumer.Assignment.ToList());
@@ -87,9 +87,9 @@ namespace StockProduct.Infrastructure.Message.Broker
 
         public void Resume()
         {
-            using var consumer = new ConsumerBuilder<string, StockProductData>(_consumerConfig)
+            using var consumer = new ConsumerBuilder<string, StockProductInput>(_consumerConfig)
                 .SetKeyDeserializer(new JsonDeserializerKeyUTF8<string>())
-                .SetValueDeserializer(new JsonDeserializerValueUTF8<StockProductData>(JsonCreationConverter))
+                .SetValueDeserializer(new JsonDeserializerValueUTF8<StockProductInput>(JsonCreationConverter))
                 .Build();
 
             consumer.Resume(consumer.Assignment.ToList());

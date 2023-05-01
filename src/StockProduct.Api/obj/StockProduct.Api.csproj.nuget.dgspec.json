@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\repo\\stock-product-hub\\src\\StockProduct.Api\\StockProduct.Api.csproj": {}
+    "C:\\repo\\stock-product-hub\\src\\StockProduct.Api\\StockProduct.Api.csproj": {}
   },
   "projects": {
-    "c:\\repo\\stock-product-hub\\src\\StockProduct.Api\\StockProduct.Api.csproj": {
+    "C:\\repo\\stock-product-hub\\src\\StockProduct.Api\\StockProduct.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\repo\\stock-product-hub\\src\\StockProduct.Api\\StockProduct.Api.csproj",
+        "projectUniqueName": "C:\\repo\\stock-product-hub\\src\\StockProduct.Api\\StockProduct.Api.csproj",
         "projectName": "StockProduct.Api",
-        "projectPath": "c:\\repo\\stock-product-hub\\src\\StockProduct.Api\\StockProduct.Api.csproj",
+        "projectPath": "C:\\repo\\stock-product-hub\\src\\StockProduct.Api\\StockProduct.Api.csproj",
         "packagesPath": "C:\\Users\\Thiago Santos\\.nuget\\packages\\",
-        "outputPath": "c:\\repo\\stock-product-hub\\src\\StockProduct.Api\\obj\\",
+        "outputPath": "C:\\repo\\stock-product-hub\\src\\StockProduct.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Thiago Santos\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,11 +29,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "c:\\repo\\stock-product-hub\\src\\StockProduct.Application\\StockProduct.Application.csproj": {
-                "projectPath": "c:\\repo\\stock-product-hub\\src\\StockProduct.Application\\StockProduct.Application.csproj"
+              "C:\\repo\\stock-product-hub\\src\\StockProduct.Application\\StockProduct.Application.csproj": {
+                "projectPath": "C:\\repo\\stock-product-hub\\src\\StockProduct.Application\\StockProduct.Application.csproj"
               },
-              "c:\\repo\\stock-product-hub\\src\\StockProduct.Infrastructure\\StockProduct.Infrastructure.csproj": {
-                "projectPath": "c:\\repo\\stock-product-hub\\src\\StockProduct.Infrastructure\\StockProduct.Infrastructure.csproj"
+              "C:\\repo\\stock-product-hub\\src\\StockProduct.Infrastructure\\StockProduct.Infrastructure.csproj": {
+                "projectPath": "C:\\repo\\stock-product-hub\\src\\StockProduct.Infrastructure\\StockProduct.Infrastructure.csproj"
               }
             }
           }
@@ -48,13 +48,21 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "FluentValidation": {
-              "target": "Package",
-              "version": "[11.5.1, )"
-            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.3, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Http.Polly": {
+              "target": "Package",
+              "version": "[7.0.4, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -80,18 +88,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "c:\\repo\\stock-product-hub\\src\\StockProduct.Application\\StockProduct.Application.csproj": {
+    "C:\\repo\\stock-product-hub\\src\\StockProduct.Application\\StockProduct.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\repo\\stock-product-hub\\src\\StockProduct.Application\\StockProduct.Application.csproj",
+        "projectUniqueName": "C:\\repo\\stock-product-hub\\src\\StockProduct.Application\\StockProduct.Application.csproj",
         "projectName": "StockProduct.Application",
-        "projectPath": "c:\\repo\\stock-product-hub\\src\\StockProduct.Application\\StockProduct.Application.csproj",
+        "projectPath": "C:\\repo\\stock-product-hub\\src\\StockProduct.Application\\StockProduct.Application.csproj",
         "packagesPath": "C:\\Users\\Thiago Santos\\.nuget\\packages\\",
-        "outputPath": "c:\\repo\\stock-product-hub\\src\\StockProduct.Application\\obj\\",
+        "outputPath": "C:\\repo\\stock-product-hub\\src\\StockProduct.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Thiago Santos\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -121,7 +129,27 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.5.2, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.AspNetCore.Http.Extensions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Http": {
               "target": "Package",
               "version": "[7.0.0, )"
             },
@@ -133,6 +161,10 @@
               "target": "Package",
               "version": "[7.2.3, )"
             },
+            "Polly.Contrib.Simmy": {
+              "target": "Package",
+              "version": "[0.3.0, )"
+            },
             "Polly.Contrib.WaitAndRetry": {
               "target": "Package",
               "version": "[1.1.1, )"
@@ -140,6 +172,10 @@
             "Polly.Extensions.Http": {
               "target": "Package",
               "version": "[3.0.0, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
             }
           },
           "imports": [
@@ -158,18 +194,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "c:\\repo\\stock-product-hub\\src\\StockProduct.Infrastructure\\StockProduct.Infrastructure.csproj": {
+    "C:\\repo\\stock-product-hub\\src\\StockProduct.Infrastructure\\StockProduct.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\repo\\stock-product-hub\\src\\StockProduct.Infrastructure\\StockProduct.Infrastructure.csproj",
+        "projectUniqueName": "C:\\repo\\stock-product-hub\\src\\StockProduct.Infrastructure\\StockProduct.Infrastructure.csproj",
         "projectName": "StockProduct.Infrastructure",
-        "projectPath": "c:\\repo\\stock-product-hub\\src\\StockProduct.Infrastructure\\StockProduct.Infrastructure.csproj",
+        "projectPath": "C:\\repo\\stock-product-hub\\src\\StockProduct.Infrastructure\\StockProduct.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Thiago Santos\\.nuget\\packages\\",
-        "outputPath": "c:\\repo\\stock-product-hub\\src\\StockProduct.Infrastructure\\obj\\",
+        "outputPath": "C:\\repo\\stock-product-hub\\src\\StockProduct.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Thiago Santos\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -187,8 +223,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "c:\\repo\\stock-product-hub\\src\\StockProduct.Application\\StockProduct.Application.csproj": {
-                "projectPath": "c:\\repo\\stock-product-hub\\src\\StockProduct.Application\\StockProduct.Application.csproj"
+              "C:\\repo\\stock-product-hub\\src\\StockProduct.Application\\StockProduct.Application.csproj": {
+                "projectPath": "C:\\repo\\stock-product-hub\\src\\StockProduct.Application\\StockProduct.Application.csproj"
               }
             }
           }
@@ -228,7 +264,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

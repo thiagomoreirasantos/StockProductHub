@@ -17,7 +17,7 @@ namespace StockProduct.Infrastructure.Message.Broker
             this.consumerService = consumerService;
         }
 
-        public async Task Produce(StockProductData entity, string? partition = null)
+        public async Task Produce(StockProductOutput entity, string? partition = null)
         {
             await producerService.ProduceMessageAsync(entity, partition);
         }

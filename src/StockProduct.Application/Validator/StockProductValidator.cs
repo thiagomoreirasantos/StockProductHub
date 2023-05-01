@@ -1,9 +1,9 @@
 using FluentValidation;
 using StockProduct.Application.Dtos;
 
-namespace StockProduct.Api.Validator
+namespace StockProduct.Application.Validator
 {
-    public class StockProductValidator : AbstractValidator<StockProductData>
+    public class StockProductValidator : AbstractValidator<StockProductOutput>
     {
         public StockProductValidator()
         {
