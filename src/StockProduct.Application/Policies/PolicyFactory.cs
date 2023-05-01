@@ -1,13 +1,15 @@
 using System.Net;
 using Microsoft.Extensions.Logging;
 using Polly;
+using Polly.Contrib.Simmy;
+using Polly.Contrib.Simmy.Outcomes;
 using Polly.Contrib.WaitAndRetry;
 using Polly.Retry;
 using StockProduct.Application.Interfaces;
 
 namespace StockProduct.Application.Policies
 {
-    public class PolicyFactory: IPolicyFactory
+    public class PolicyFactory : IPolicyFactory
     {
         private readonly object randomLock = new();
         private readonly Random random = new();
@@ -69,6 +71,14 @@ namespace StockProduct.Application.Policies
             {
                 Content = new StringContent("Retry policy finished")
             };
+        }
+
+        public AsyncInjectOutcomePolicy<HttpResponseMessage> GetChaosPolicy()
+        {
+            var result = new HttpResponseMessage(HttpStatusCode.BadRequest);
+            return MonkeyPolicy.InjectResultAsync<HttpResponseMessage>(with =>
+                with.Result(result)
+                    .Enabled(true));
         }
     }
 }

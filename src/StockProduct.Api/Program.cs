@@ -1,9 +1,11 @@
 using FluentValidation;
+using Microsoft.Extensions.DependencyInjection;
 using StockProduct.Api.Validator;
 using StockProduct.Application.Configuration;
 using StockProduct.Application.Dtos;
 using StockProduct.Application.Interfaces;
 using StockProduct.Application.Policies;
+using StockProduct.Application.Services;
 using StockProduct.Infrastructure.Message.Broker;
 using StockProduct.Infrastructure.Message.Broker.Consumer;
 using StockProduct.Infrastructure.Message.Broker.Producer;
@@ -29,6 +31,15 @@ builder.Services.AddScoped<IConsumerService, ConsumerService>();
 builder.Services.AddScoped<IKafkaBroker, KafkaBroker>();
 
 builder.Services.AddScoped<IPolicyFactory, PolicyFactory>();
+
+builder.Services.AddScoped<IDeliveryService, DeliveryService>();
+
+builder.Services.AddHttpClient("", config =>
+{
+    config.BaseAddress = new Uri(applicationSettings.Kafka.Destination.Host);
+    config.Timeout = TimeSpan.FromMinutes(5);
+    config.DefaultRequestHeaders.Add("Accept", "application/json");
+}).SetHandlerLifetime(TimeSpan.FromMinutes(5));
 
 var app = builder.Build();
 
